@@ -21,15 +21,15 @@ This project uses Yarn as a package manager. To install Yarn, follow the instruc
 ### Installation
 
 1. Clone the repository:
-   sh
+
    git clone https://github.com/rodicamun/task-application.git
    
 2. Navigate to the project directory:
-   sh
+   
    cd task-application
    
 3. Install the dependencies using Yarn:
-   sh
+   
    yarn install
    
 ### Environment Setup
@@ -47,7 +47,6 @@ Before running the application, you'll need to set up environment variables:
 
 To start the application, run the following command:
 
-sh
 yarn start
 
 
@@ -57,7 +56,6 @@ The app will be served at `http://localhost:3000` and should open automatically 
 
 To run the unit tests configured for the app, execute:
 
-sh
 yarn test
 
 
