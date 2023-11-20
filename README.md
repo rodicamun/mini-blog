@@ -39,7 +39,7 @@ Before running the application, you'll need to set up environment variables:
 1. Create a `.env` file in the project root.
 2. Add the following line to the `.env` file, replacing the URL with the base URL of your API:
    
-   REACT_APP_API_URL=https://your-api-base-url.com
+   REACT_APP_API_URL=https://jsonplaceholder.typicode.com
    
 3. Save the file. The application will now use this base URL for API requests.
 
