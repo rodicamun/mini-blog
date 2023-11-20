@@ -1,46 +1,101 @@
-# Getting Started with Create React App
+# Mini Blog App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This mini blog app is a single-page application developed using React with TypeScript. It was bootstrapped with [Create React App](https://create-react-app.dev/), and it utilizes https://ant.design/ for design system. The app features a user profile sidebar and allows users to view, edit, and delete blog posts using a RESTful API.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- View a list of blog posts in the Blogs content area.
+- User profile information is fetched from an API and displayed in a fixed sidebar.
+- Navigate to detailed views of each post.
+- Edit and delete functionality for blog posts.
+- Responsive sidebar with fixed user details and navigation links, implemented with https://ant.design/.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+This project uses Yarn as a package manager. To install Yarn, follow the instructions on the [Yarn Documentation](https://yarnpkg.com/getting-started/install).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
+   sh
+   git clone https://github.com/rodicamun/task-application.git
+   
+2. Navigate to the project directory:
+   sh
+   cd task-application
+   
+3. Install the dependencies using Yarn:
+   sh
+   yarn install
+   
+### Environment Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Before running the application, you'll need to set up environment variables:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Create a `.env` file in the project root.
+2. Add the following line to the `.env` file, replacing the URL with the base URL of your API:
+   
+   REACT_APP_API_URL=https://your-api-base-url.com
+   
+3. Save the file. The application will now use this base URL for API requests.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Running the App
 
-### `npm run eject`
+To start the application, run the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+sh
+yarn start
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The app will be served at `http://localhost:3000` and should open automatically in your web browser.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Testing
 
-## Learn More
+To run the unit tests configured for the app, execute:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+sh
+yarn test
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Usage
+
+After starting the app, you will see the user profile on the sidebar and a list of blog posts.
+
+- Use the **Dashboard** link to view the homepage (does not contain specific content).
+- The **Blogs** link displays the list of posts.
+- Click on any post to view its details, where you can edit or delete the post.
+- Use the **Edit** button to change a post's title or content.
+- The **Delete** button removes the post from the list.
+- A **Back** button is provided to navigate back to the blogs list from post details.
+
+## API Reference
+
+This application utilizes JSONPlaceholder, a fake online REST API for testing and prototyping:
+
+- User profile: `https://jsonplaceholder.typicode.com/users/{id}`
+- User's posts: `https://jsonplaceholder.typicode.com/users/{id}/posts`
+- Specific post: `https://jsonplaceholder.typicode.com/posts/{id}`
+
+## Contributing
+
+Contributions are what make the open-source community an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See the `LICENSE` file for more information.
+
+## Contact
+
+Rodica Muntean - rodica.muntean@cognizant.com
+
+Project Link: [https://github.com/rodicamun/task-application](https://github.com/rodicamun/task-application)

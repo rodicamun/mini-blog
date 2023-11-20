@@ -1,5 +1,5 @@
 import { Post, User } from '../types';
-const BASE_URL = 'https://jsonplaceholder.typicode.com';
+const BASE_URL = process.env.REACT_APP_API_URL;;
 
 export const fetchRandomUser = async (): Promise<User> => {
   const randomId = Math.floor(Math.random() * 10) + 1;
