@@ -37,7 +37,7 @@ This project uses Yarn as a package manager. To install Yarn, follow the instruc
 Before running the application, you'll need to set up environment variables:
 
 1. Create a `.env` file in the project root.
-2. Add the following line to the `.env` file, replacing the URL with the base URL of your API:
+2. Add the following line to the `.env` file, replacing the URL with the base URL of the API:
    
    REACT_APP_API_URL=https://jsonplaceholder.typicode.com
    
