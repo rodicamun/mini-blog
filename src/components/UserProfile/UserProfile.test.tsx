@@ -33,7 +33,7 @@ describe('UserProfile', () => {
 
   it('handles the error state if fetch fails', async () => {
     const consoleError = jest.spyOn(console, 'error').mockImplementation(() => {});
-    (fetchRandomUser as jest.Mock).mockRejectedValueOnce(new Error('Failed to fetch user')); // Corrected mock function
+    (fetchRandomUser as jest.Mock).mockRejectedValueOnce(new Error('Failed to fetch user'));
     render(<UserProfile />);
     await waitFor(() => expect(consoleError).toHaveBeenCalledWith('Failed to fetch user:', expect.any(Error)));
     consoleError.mockRestore();
