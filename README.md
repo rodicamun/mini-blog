@@ -22,11 +22,11 @@ This project uses Yarn as a package manager. To install Yarn, follow the instruc
 
 1. Clone the repository:
 
-   git clone https://github.com/rodicamun/task-application.git
+   git clone https://github.com/rodicamun/mini-blog.git
    
 2. Navigate to the project directory:
    
-   cd task-application
+   cd mini-blog
    
 3. Install the dependencies using Yarn:
    
@@ -96,4 +96,4 @@ Distributed under the MIT License. See the `LICENSE` file for more information.
 
 Rodica Muntean - rodica.muntean@cognizant.com
 
-Project Link: [https://github.com/rodicamun/task-application](https://github.com/rodicamun/task-application)
+Project Link: [https://github.com/rodicamun/mini-blog](https://github.com/rodicamun/mini-blog)
